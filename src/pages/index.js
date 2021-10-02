@@ -9,10 +9,15 @@ const Header = styled.div`
   background-color: blue;
   color: white;
 `
+
+const uppercase = css`
+  text-transform: uppercase;
+`
+
 export default function Home({ children }) {
   return (
     <Header>
-      <div>Welcome to my Gatsby site!</div>
+      <div css={uppercase}>Welcome to my Gatsby site!</div>
     </Header>
   )
 }
